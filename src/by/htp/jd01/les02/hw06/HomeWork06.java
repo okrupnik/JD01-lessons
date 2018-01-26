@@ -1,15 +1,14 @@
-package by.htp.jd01.les02.hw05;
+package by.htp.jd01.les02.hw06;
 
 import java.util.Scanner;
 
-public class HomeWork05 {
+public class HomeWork06 {
 
 	public static void main(String[] args) {
 		int number;
-		int n;
+		double n;
 		int counter_even = 0;
-		int sum_multiply = 0;
-		int counter_mod = 0;
+		int counter_more = 0;
 		Scanner sc = new Scanner(System.in);
 
 		do {
@@ -23,25 +22,22 @@ public class HomeWork05 {
 
 		for (int i = 0; i < number; i++) {
 			System.out.print("Enter number: ");
-			while (!sc.hasNextInt()) {
+			while (!sc.hasNextDouble()) {
 				System.out.print("Enter number: ");
 				sc.next();
 			}
-			n = sc.nextInt();
+			n = (int) (sc.nextDouble());
+			
 			if ((n % 2) == 0) {
 				counter_even++;
-			}
-			if ((n % 3) == 0) {
-				sum_multiply += n;
-			}
-			if (Math.abs(n) < 3) {
-				counter_mod++;
+			} if (n > 15) {
+				counter_more++;
 			}
 		}
-
+		
 		System.out.println("Even number: " + counter_even);
-		System.out.println("Sum: " + sum_multiply);
-		System.out.println("Mod number: " + counter_mod);
+		System.out.println("Numbers more, than 15: " + counter_more);
+
 	}
 
 }
