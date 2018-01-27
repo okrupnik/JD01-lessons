@@ -7,9 +7,9 @@ public class HomeWork05 {
 	public static void main(String[] args) {
 		int number;
 		int n;
-		int counter_even = 0;
-		int sum_multiply = 0;
-		int counter_mod = 0;
+		int counterEven = 0;
+		int sumMultiply = 0;
+		int counterMod = 0;
 		Scanner sc = new Scanner(System.in);
 
 		do {
@@ -29,19 +29,19 @@ public class HomeWork05 {
 			}
 			n = sc.nextInt();
 			if ((n % 2) == 0) {
-				counter_even++;
+				counterEven++;
 			}
 			if ((n % 3) == 0) {
-				sum_multiply += n;
+				sumMultiply += n;
 			}
 			if (Math.abs(n) < 3) {
-				counter_mod++;
+				counterMod++;
 			}
 		}
 
-		System.out.println("Even number: " + counter_even);
-		System.out.println("Sum: " + sum_multiply);
-		System.out.println("Mod number: " + counter_mod);
+		System.out.println("Even number: " + counterEven);
+		System.out.println("Sum: " + sumMultiply);
+		System.out.println("Mod number: " + counterMod);
 	}
 
 }

@@ -12,23 +12,27 @@ public class HomeWork01 {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("Enter first katet: ");
-		while (!sc.hasNextDouble()) {
+		do {
 			System.out.print("Enter first katet: ");
-			sc.next();
-		}
-		a = sc.nextDouble();
+			while (!sc.hasNextDouble()) {
+				System.out.print("Enter first katet: ");
+				sc.next();
+			}
+			a = sc.nextDouble();
+		} while (a <= 0);
 
-		System.out.print("Enter second katet: ");
-		while (!sc.hasNextDouble()) {
+		do {
 			System.out.print("Enter second katet: ");
-			sc.next();
-		}
-		b = sc.nextDouble();
+			while (!sc.hasNextDouble()) {
+				System.out.print("Enter second katet: ");
+				sc.next();
+			}
+			b = sc.nextDouble();
+		} while (b <= 0);
 
 		c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
 		s = (a * b) / 2;
-		
+
 		System.out.println("Gipotenuza: " + c);
 		System.out.println("Square: " + s);
 

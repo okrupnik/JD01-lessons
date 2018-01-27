@@ -7,8 +7,8 @@ public class HomeWork06 {
 	public static void main(String[] args) {
 		int number;
 		double n;
-		int counter_even = 0;
-		int counter_more = 0;
+		int counterEven = 0;
+		int counterMore = 0;
 		Scanner sc = new Scanner(System.in);
 
 		do {
@@ -29,14 +29,14 @@ public class HomeWork06 {
 			n = (int) (sc.nextDouble());
 			
 			if ((n % 2) == 0) {
-				counter_even++;
+				counterEven++;
 			} if (n > 15) {
-				counter_more++;
+				counterMore++;
 			}
 		}
 		
-		System.out.println("Even number: " + counter_even);
-		System.out.println("Numbers more, than 15: " + counter_more);
+		System.out.println("Even number: " + counterEven);
+		System.out.println("Numbers more, than 15: " + counterMore);
 
 	}
 

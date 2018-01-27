@@ -10,7 +10,7 @@ public class HomeWork07 {
 		double c = 0.0;
 		double d = 0.0;
 		double rez;
-		
+
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("Enter a: ");
@@ -26,23 +26,27 @@ public class HomeWork07 {
 			sc.next();
 		}
 		b = sc.nextDouble();
-		
-		System.out.print("Enter c: ");
-		while (!sc.hasNextDouble()) {
-			System.out.print("Enter c: ");
-			sc.next();
-		}
-		c = sc.nextDouble();
-		
-		System.out.print("Enter d: ");
-		while (!sc.hasNextDouble()) {
-			System.out.print("Enter d: ");
-			sc.next();
-		}
-		d = sc.nextDouble();
-		
+
+		do {
+			System.out.print("Enter c more than 0: ");
+			while (!sc.hasNextDouble()) {
+				System.out.print("Enter c more than 0: ");
+				sc.next();
+			}
+			c = sc.nextDouble();
+		} while (c <= 0);
+
+		do {
+			System.out.print("Enter d more than 0: ");
+			while (!sc.hasNextDouble()) {
+				System.out.print("Enter d more than 0: ");
+				sc.next();
+			}
+			d = sc.nextDouble();
+		} while (d <= 0);
+
 		rez = ((a / c) * (b / d)) - (((a * b) - c) / (c * d));
-		
+
 		System.out.print("rez: " + rez);
 
 	}
