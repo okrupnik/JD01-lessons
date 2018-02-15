@@ -1,139 +1,105 @@
 package by.htp.jd01.unit4.hw03;
 
-public class Note {
-	private int id = 0;
-	private String surname = null;
-	private String name = null;
-	private String address = null;
-	private String phoneNumber = null;
+public class Note implements Cloneable, Comparable<Note> {
+	private String text;
+	private Date date;
+	private Boolean isActual;
 
-	public Note(int id, String surname, String name, String address, String phoneNumber) {
-		this.id = id;
-		this.surname = surname;
-		this.name = name;
-		this.address = address;
-		this.phoneNumber = phoneNumber;
+	public Note() {
+
 	}
 
-	public int getId() {
-		return id;
+	public Note(String text, Date date, Boolean isActual) {
+		this.text = text;
+		this.date = date;
+		this.isActual = isActual;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public String getText() {
+		return text;
 	}
 
-	public String getSurname() {
-		return surname;
+	public void setText(String text) {
+		this.text = text;
 	}
 
-	public void setSurname(String surname) {
-		this.surname = surname;
+	public Date getDate() {
+		return date;
 	}
 
-	public String getName() {
-		return name;
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public Boolean getIsActual() {
+		return isActual;
 	}
 
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public String getPhoneNumber() {
-		return phoneNumber;
-	}
-
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
+	public void setIsActual(Boolean isActual) {
+		this.isActual = isActual;
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((address == null) ? 0 : address.hashCode());
-		result = prime * result + id;
-		result = prime * result + ((name == null) ? 0 : name.hashCode());
-		result = prime * result + ((phoneNumber == null) ? 0 : phoneNumber.hashCode());
-		result = prime * result + ((surname == null) ? 0 : surname.hashCode());
+		result = prime * result + ((date == null) ? 0 : date.hashCode());
+		result = prime * result + ((isActual == null) ? 0 : isActual.hashCode());
+		result = prime * result + ((text == null) ? 0 : text.hashCode());
 		return result;
 	}
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj) {
+		if (this == obj)
 			return true;
-		}
-
-		if (obj == null) {
+		if (obj == null)
 			return false;
-		}
-
-		if (getClass() != obj.getClass()) {
+		if (getClass() != obj.getClass())
 			return false;
-		}
-
-		Note note = (Note) obj;
-		if (this.id != note.id) {
+		Note other = (Note) obj;
+		if (date == null) {
+			if (other.date != null)
+				return false;
+		} else if (!date.equals(other.date))
 			return false;
-		}
-
-		if (this.surname == null) {
-			if (note.surname != null) {
+		if (isActual == null) {
+			if (other.isActual != null)
 				return false;
-			}
-		} else {
-			if (!this.surname.equals(note.surname)) {
+		} else if (!isActual.equals(other.isActual))
+			return false;
+		if (text == null) {
+			if (other.text != null)
 				return false;
-			}
-		}
-
-		if (this.name == null) {
-			if (note.name != null) {
-				return false;
-			}
-		} else {
-			if (!this.name.equals(note.name)) {
-				return false;
-			}
-		}
-
-		if (this.address == null) {
-			if (note.address != null) {
-				return false;
-			}
-		} else {
-			if (!this.address.equals(note.address)) {
-				return false;
-			}
-		}
-
-		if (this.phoneNumber == null) {
-			if (note.phoneNumber != null) {
-				return false;
-			}
-		} else {
-			if (!this.phoneNumber.equals(note.phoneNumber)) {
-				return false;
-			}
-		}
-
+		} else if (!text.equals(other.text))
+			return false;
 		return true;
 	}
 
 	@Override
-	public String toString() {
-		//System.out.println(surname + " " + name + ", address: " + address + ", phoneNumber: " + phoneNumber);
-		return surname + " " + name + ", address: " + address + ", phoneNumber: " + phoneNumber;
+	protected Object clone() throws CloneNotSupportedException {
+		Note obj = null;
+		obj = (Note) super.clone();
+
+		if (this.date != null) {
+			obj.date = (Date) this.date.clone();
+		}
+		return obj;
 	}
 
-	
+	@Override
+	public int compareTo(Note arg0) {
+		int yearCurrent = this.date.getYear();
+		int yearNext = arg0.getDate().getYear();
+
+		if (yearCurrent > yearNext) {
+			return 1;
+		}
+		if (yearCurrent < yearNext) {
+			return -1;
+		}
+
+			return 0;
+	}
+
 }

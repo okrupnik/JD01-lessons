@@ -1,39 +1,35 @@
 package by.htp.jd01.unit4.hw03;
 
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.TreeSet;
 
-import com.sun.org.apache.xml.internal.utils.Hashtree2Node;
+public class NoteBook {
+	private Owner owner;
+	private TreeSet<Note> notes;
 
-public class Notebook {
-
-	private ArrayList<Note> arrayNotes = null;
-
-	public Notebook() {
-
-		this.arrayNotes = new ArrayList<>();
+	public NoteBook(Owner owner) {
+		this.owner = owner;
+		notes = new TreeSet<Note>();
 	}
 
-	public void addNote(int id, String surname, String name, String address, String phoneNumber) {
-		Note note = new Note(id, surname, name, address, phoneNumber);
-		arrayNotes.add(note);
+	public Owner getOwner() {
+		return owner;
 	}
 
-	public boolean searchNote(Note searchNote) {
-
-		for (Note note : arrayNotes) {
-			if (note.equals(searchNote)) {
-				return true;
-			}
-		}
-
-		return false;
+	public void setOwner(Owner owner) {
+		this.owner = owner;
 	}
 
-	public void printNote() {
-		for (Note note : arrayNotes) {
-			System.out.println(note.toString());
-		}
+	public TreeSet<Note> getNotes() {
+		return notes;
 	}
 
+	public void setNotes(TreeSet<Note> notes) {
+		this.notes = notes;
+	}
+
+	public void add(String text, int day, int month, int year) {
+		Note newNote = new Note(text, new Date(day, month, year), true);
+		notes.add(newNote);
+	}
 }

@@ -1,32 +1,33 @@
 package by.htp.jd01.unit4.hw03;
 
+import java.util.TreeSet;
+
 public class HomeWork03 {
 
 	public static void main(String[] args) {
-		Notebook notebook = new Notebook();
-		
-		notebook.addNote(1, "Ivanov", "Dima", "Kotlovca street, 25-3", "+375-29-236-84-95");
-		notebook.addNote(2, "Sidorov", "Petya", "Bakinskaya street, 8-123", "+375-29-669-12-13");
-		notebook.addNote(3, "Petrov", "Vasya", "Luninca street, 5-36", "+375-25-321-65-47");
-		notebook.addNote(4, "Ivanov", "Kolya", "Lenina street, 65-13", "+375-29-654-62-51");
-		notebook.addNote(5, "Novikova", "Sveta", "Masherova street, 18-78", "+375-29-614-78-41");
-		notebook.addNote(6, "Turkina", "Nina", "Druzhby street, 2-115", "+375-33-321-98-45");
-		
-		Note note7 = new Note(3, "Petrov", "Vasya", "Luninca street, 5-36", "+375-25-321-65-47");
-				
-		if (notebook.searchNote(note7)) {
-			System.out.println("Search note: " + note7.toString());
-		} else {
-			System.out.println("This note doesn't exist!");
-		}
-		
-		System.out.println("________________________________________________________________");
-		System.out.println();
-		System.out.println("****************************************************************");
-		System.out.println("________________________________________________________________");
-		
-		System.out.println("All notes of your notebook:");
-		notebook.printNote();
+		Note note1 = new Note("note1", new Date(13, 2, 2017), true);
+		Note note2 = new Note("note2", new Date(28, 10, 2020), false);
+		Note note3 = new Note("note3", new Date(5, 12, 2015), true);
+
+		// note1.compareTo(note2);
+
+		/*
+		 * TreeSet<Note> set = new TreeSet<Note>();
+		 * 
+		 * set.add(note1); set.add(note2); set.add(note3); for (Note n: set){
+		 * System.out.println(n.getDate().getYear()); }
+		 */
+
+		//NoteComparator comparator = new NoteComparator();
+		/*TreeSet<Note> set2 = new TreeSet<Note>(comparator);
+
+		set2.add(note1);
+		set2.add(note2);
+		set2.add(note3);
+
+		for (Note n : set2) {
+			System.out.println(n.getDate().getYear());
+		}*/
 
 	}
 
