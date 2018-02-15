@@ -2,20 +2,6 @@ package by.htp.jd01.unit3.hw05;
 
 public class Logic {
 
-	/*private Fraction fraction;
-
-	public Logic(Fraction fraction) {
-		this.fraction = fraction;
-	}
-
-	public Fraction getFr() {
-		return fraction;
-	}
-
-	public void setFr(Fraction fraction) {
-		this.fraction = fraction;
-	}*/
-
 	public Fraction add(Fraction fraction, Fraction fraction2) {
 		int newNumerator;
 		int newDenominator;
