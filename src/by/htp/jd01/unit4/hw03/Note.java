@@ -75,6 +75,11 @@ public class Note implements Cloneable, Comparable<Note> {
 			return false;
 		return true;
 	}
+		
+	@Override
+	public String toString() {
+		return "[" + text + ",  " + date.getDay() + "/" + date.getMonth() + "/" + date.getYear() + ",  " + isActual + "]";
+	}
 
 	@Override
 	protected Object clone() throws CloneNotSupportedException {

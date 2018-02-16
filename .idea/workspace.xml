@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b1aa09-8ea0-4afb-adb3-8e6088d14ee4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JD01-lessons.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/htp/jd01/unit3/hw05/Logic.java" afterPath="$PROJECT_DIR$/src/by/htp/jd01/unit3/hw05/Logic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Date.java" afterPath="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Date.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/HomeWork03.java" afterPath="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/HomeWork03.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Note.java" afterPath="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Note.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Notebook.java" afterPath="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Notebook.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +21,8 @@
       <file leaf-file-name="HomeWork03.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/HomeWork03.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state relative-caret-position="132">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -32,19 +31,24 @@
       <file leaf-file-name="Note.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Note.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="134" column="95" lean-forward="false" selection-start-line="134" selection-start-column="95" selection-end-line="134" selection-end-column="95" />
-              <folding />
+            <state relative-caret-position="17">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#356#357#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Notebook.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Notebook.java">
+      <file leaf-file-name="NoteBook.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/NoteBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="176">
+              <caret line="66" column="34" lean-forward="false" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+              <folding>
+                <element signature="e#835#841#0" expanded="true" />
+                <element signature="e#1056#1062#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,8 +71,9 @@
         <option value="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw02/HomeWork02.java" />
         <option value="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw02/Manager.java" />
         <option value="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Note.java" />
-        <option value="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Notebook.java" />
         <option value="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/HomeWork03.java" />
+        <option value="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Notebook.java" />
+        <option value="$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/NoteBook.java" />
       </list>
     </option>
   </component>
@@ -99,8 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -182,6 +185,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -677,11 +682,12 @@
       <workItem from="1518364379581" duration="575000" />
       <workItem from="1518421486976" duration="1311000" />
       <workItem from="1518626420336" duration="1038000" />
+      <workItem from="1518769432739" duration="952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5256000" />
+    <option name="totallyTimeSpent" value="6208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -701,7 +707,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2685325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -728,12 +734,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/HomeWork03.java</url>
-          <line>28</line>
+          <line>59</line>
           <properties />
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -742,11 +748,39 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/HomeWork03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Note.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="134" column="95" lean-forward="false" selection-start-line="134" selection-start-column="95" selection-end-line="134" selection-end-column="95" />
+          <folding>
+            <element signature="e#356#357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/NoteBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="e#835#841#0" expanded="true" />
+            <element signature="e#1056#1062#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw01/Group.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -754,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="62" lean-forward="false" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -770,18 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1518600727266" expanded="false" signature="196:201" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="235:238" ph=" }" />
-            <marker date="1518600727266" expanded="false" signature="263:268" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="280:283" ph=" }" />
-            <marker date="1518600727266" expanded="false" signature="317:322" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="339:342" ph=" }" />
-            <marker date="1518600727266" expanded="true" signature="375:380" ph=" { " />
-            <marker date="1518600727266" expanded="true" signature="399:402" ph=" }" />
-            <marker date="1518600727266" expanded="false" signature="451:456" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="487:490" ph=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -789,7 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,7 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="62" lean-forward="false" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,7 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -821,18 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1518600727266" expanded="false" signature="196:201" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="235:238" ph=" }" />
-            <marker date="1518600727266" expanded="false" signature="263:268" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="280:283" ph=" }" />
-            <marker date="1518600727266" expanded="false" signature="317:322" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="339:342" ph=" }" />
-            <marker date="1518600727266" expanded="true" signature="375:380" ph=" { " />
-            <marker date="1518600727266" expanded="true" signature="399:402" ph=" }" />
-            <marker date="1518600727266" expanded="false" signature="451:456" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="487:490" ph=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -840,7 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="75" column="32" lean-forward="false" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -848,7 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="62" lean-forward="false" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -864,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,18 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1518600727266" expanded="false" signature="196:201" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="235:238" ph=" }" />
-            <marker date="1518600727266" expanded="false" signature="263:268" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="280:283" ph=" }" />
-            <marker date="1518600727266" expanded="false" signature="317:322" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="339:342" ph=" }" />
-            <marker date="1518600727266" expanded="true" signature="375:380" ph=" { " />
-            <marker date="1518600727266" expanded="true" signature="399:402" ph=" }" />
-            <marker date="1518600727266" expanded="false" signature="451:456" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="487:490" ph=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -891,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="74" column="30" lean-forward="false" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,17 +886,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw01/People.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw01/People.java" />
     <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw01/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -921,7 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="62" lean-forward="true" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,7 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,7 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="62" lean-forward="false" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,29 +925,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw01/People.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw01/People.java" />
     <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw02/Abiturient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1518600727266" expanded="false" signature="196:201" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="235:238" ph=" }" />
-            <marker date="1518600727266" expanded="false" signature="263:268" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="280:283" ph=" }" />
-            <marker date="1518600727266" expanded="false" signature="317:322" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="339:342" ph=" }" />
-            <marker date="1518600727266" expanded="true" signature="375:380" ph=" { " />
-            <marker date="1518600727266" expanded="true" signature="399:402" ph=" }" />
-            <marker date="1518600727266" expanded="false" signature="451:456" ph=" { " />
-            <marker date="1518600727266" expanded="false" signature="487:490" ph=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -978,7 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,31 +944,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/HomeWork03.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="132">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Note.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="134" column="95" lean-forward="false" selection-start-line="134" selection-start-column="95" selection-end-line="134" selection-end-column="95" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#356#357#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/Notebook.java">
+    <entry file="file://$PROJECT_DIR$/src/by/htp/jd01/unit4/hw03/NoteBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="176">
+          <caret line="66" column="34" lean-forward="false" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+          <folding>
+            <element signature="e#835#841#0" expanded="true" />
+            <element signature="e#1056#1062#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
