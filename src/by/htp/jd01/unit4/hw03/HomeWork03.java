@@ -1,5 +1,6 @@
 package by.htp.jd01.unit4.hw03;
 
+import java.util.ArrayList;
 import java.util.TreeSet;
 
 public class HomeWork03 {
@@ -16,7 +17,7 @@ public class HomeWork03 {
 		Note note9 = new Note("note3", new Date(17, 1, 2030), true);
 		Note note10 = new Note("note1", new Date(15, 4, 2015), false);
 
-		NoteBook noteBook = new NoteBook(new Owner("Ivanov", "Dima", "+375-29-841-95-62"));
+		NoteBook noteBook = new NoteBook(new Owner("Ivanov", "Dima", "+375-29-841-95-62"), new ArrayList<>());
 		
 		noteBook.add(note1);
 		noteBook.add(note2);

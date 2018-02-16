@@ -9,9 +9,9 @@ public class NoteBook {
 	private Owner owner;
 	private List<Note> notes;
 
-	public NoteBook(Owner owner) {
+	public NoteBook(Owner owner, List<Note> notes) {
 		this.owner = owner;
-		notes = new ArrayList<Note>();
+		this.notes = notes;
 	}
 
 	public Owner getOwner() {
@@ -26,7 +26,7 @@ public class NoteBook {
 		return notes;
 	}
 
-	public void setNotes(ArrayList<Note> notes) {
+	public void setNotes(List<Note> notes) {
 		this.notes = notes;
 	}
 	
