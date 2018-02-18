@@ -29,7 +29,7 @@ public class NoteBook {
 	public void setNotes(List<Note> notes) {
 		this.notes = notes;
 	}
-	
+
 	public void add(Note note) {
 		notes.add(note);
 	}
@@ -38,27 +38,27 @@ public class NoteBook {
 		Note newNote = new Note(text, new Date(day, month, year), true);
 		notes.add(newNote);
 	}
-	
+
 	public List<Note> searchByText(String text) {
 		List<Note> searchArray = new ArrayList<Note>();
-		for(Note note : notes) {
-			if(note.getText().equals(text)) {
+		for (Note note : notes) {
+			if (note.getText().equals(text)) {
 				searchArray.add(note);
 			}
 		}
 		return searchArray;
 	}
-	
+
 	public List<Note> searchByYear(int year) {
 		List<Note> searchArray = new ArrayList<Note>();
-		for(Note note : notes) {
-			if(note.getDate().getYear() == year) {
+		for (Note note : notes) {
+			if (note.getDate().getYear() == year) {
 				searchArray.add(note);
 			}
 		}
 		return searchArray;
 	}
-	
+
 	public void remove(String text) {
 		Iterator<Note> iterator = notes.iterator();
 		while (iterator.hasNext()) {
@@ -68,30 +68,34 @@ public class NoteBook {
 			}
 		}
 	}
-	
+
 	public void changeNote(String currentNote, String newNote) {
-		for(Note note : notes) {
-			if(note.getText().equals(currentNote)) {
+		for (Note note : notes) {
+			if (note.getText().equals(currentNote)) {
 				note.setText(newNote);
 			}
 		}
 	}
-	
+
 	public void print() {
 		int count = 1;
-		for(Note note : notes) {
+		for (Note note : notes) {
 			System.out.println(count + " - " + note.toString());
 			count++;
 		}
 	}
-	
+
 	public void print(List<Note> list) {
 		int count = 1;
-		for(Note note : list) {
-			System.out.println(count + " - " + note.toString());
-			count++;
+
+		if (list != null) {
+			for (Note note : list) {
+				System.out.println(count + " - " + note.toString());
+				count++;
+			}
+		} else {
+			System.out.println("The elements isn't found");
 		}
 	}
-	
-	
+
 }
