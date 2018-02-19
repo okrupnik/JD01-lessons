@@ -1,7 +1,11 @@
-package by.htp.jd01.unit5.hw01;
+package by.htp.jd01.unit5.hw01.rule;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import by.htp.jd01.unit5.hw01.product.ClericalProduct;
+import by.htp.jd01.unit5.hw01.product.Paper;
+import by.htp.jd01.unit5.hw01.product.WritingAccessory;
 
 public class Rucksack {
 	private List<ClericalProduct> clericalProducts;

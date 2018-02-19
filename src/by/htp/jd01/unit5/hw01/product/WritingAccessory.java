@@ -1,4 +1,4 @@
-package by.htp.jd01.unit5.hw01;
+package by.htp.jd01.unit5.hw01.product;
 
 public class WritingAccessory extends ClericalProduct {
 	private String typeAccessory;

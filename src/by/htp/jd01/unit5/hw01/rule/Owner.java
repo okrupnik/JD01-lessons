@@ -1,4 +1,4 @@
-package by.htp.jd01.unit5.hw01;
+package by.htp.jd01.unit5.hw01.rule;
 
 public class Owner {
 	private String surname;
