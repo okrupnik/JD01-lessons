@@ -1,6 +1,6 @@
 package by.htp.jd01.unit5.hw01.product;
 
-public class WritingAccessory extends ClericalProduct {
+public class WritingAccessory extends ClericalProduct implements Writable{
 	private String typeAccessory;
 	private String color;
 	
@@ -24,6 +24,11 @@ public class WritingAccessory extends ClericalProduct {
 
 	public void setColor(String color) {
 		this.color = color;
+	}
+	
+	@Override
+	public void write(String line) {
+		System.out.println(line);
 	}
 
 	@Override

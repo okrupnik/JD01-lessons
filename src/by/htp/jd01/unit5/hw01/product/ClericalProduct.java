@@ -1,6 +1,6 @@
 package by.htp.jd01.unit5.hw01.product;
 
-public class ClericalProduct {
+public abstract class ClericalProduct {
 	private String title;
 	private double price;
 	
