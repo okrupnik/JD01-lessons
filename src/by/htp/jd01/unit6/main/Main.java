@@ -26,6 +26,9 @@ public class Main {
 		String requestFindText = controller.doAction("FIND_NOTE ; idUser=1 ; login=Fisher ; password=345qwer4 ; text=array");
 		System.out.println(requestFindText);
 
+		String requestFindText2 = controller.doAction("FIND_NOTE ; idUser=1 ; login=Fisher ; password=345qwer4 ; text=tretrgf");
+		System.out.println(requestFindText2);
+
 	}
 
 }
