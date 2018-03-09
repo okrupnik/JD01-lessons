@@ -1,0 +1,11 @@
+[ERROR] 2018-03-02 19:10:48.431 [main] FileNoteDAO - dsfsdfsdfsdfsdf
+[ERROR] 2018-03-02 19:13:10.742 [main] FileNoteDAO - ddd
+[ERROR] 2018-03-02 19:13:46.534 [main] FileNoteDAO - ddd
+[ERROR] 2018-03-02 19:16:21.702 [main] FileNoteDAO - [Ljava.lang.StackTraceElement;@76a3e297
+[ERROR] 2018-03-02 19:17:40.810 [main] FileNoteDAO - java.io.FileOutputStream.open0(Native Method)
+[ERROR] 2018-03-02 19:17:40.819 [main] FileNoteDAO - java.io.FileOutputStream.open(FileOutputStream.java:270)
+[ERROR] 2018-03-02 19:17:40.819 [main] FileNoteDAO - java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+[ERROR] 2018-03-02 19:17:40.820 [main] FileNoteDAO - java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+[ERROR] 2018-03-02 19:17:40.821 [main] FileNoteDAO - java.io.FileWriter.<init>(FileWriter.java:78)
+[ERROR] 2018-03-02 19:17:40.822 [main] FileNoteDAO - by.htp.jd01.unit6.dao.impl.FileNoteDAO.add(FileNoteDAO.java:21)
+[ERROR] 2018-03-02 19:17:40.822 [main] FileNoteDAO - by.htp.jd01.unit6.dao.FileNoteDAOTest.main(FileNoteDAOTest.java:21)
