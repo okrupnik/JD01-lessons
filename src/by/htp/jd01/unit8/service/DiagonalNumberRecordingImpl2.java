@@ -1,6 +1,6 @@
-package by.htp.jd01.unit7.service;
+package by.htp.jd01.unit8.service;
 
-import by.htp.jd01.unit7.entity.Matrix;
+import by.htp.jd01.unit8.entity.Matrix;
 
 /**
  * Created by Fisher on 12.03.2018.

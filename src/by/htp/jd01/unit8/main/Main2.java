@@ -1,16 +1,13 @@
-package by.htp.jd01.unit7.main;
+package by.htp.jd01.unit8.main;
 
-import by.htp.jd01.unit7.entity.Matrix;
-import by.htp.jd01.unit7.service.DiagonalNumberRecordingImpl;
-import by.htp.jd01.unit7.service.EnterData;
-
-import java.util.Scanner;
+import by.htp.jd01.unit8.entity.Matrix;
+import by.htp.jd01.unit8.service.DiagonalNumberRecordingImpl2;
+import by.htp.jd01.unit8.service.EnterData;
 
 /**
  * Created by Fisher on 12.03.2018.
  */
-public class Main {
-
+public class Main2 {
     public static void main(String[] args) {
         int size = 0;
         int numberThread = 0;
@@ -21,9 +18,8 @@ public class Main {
         numberThread = EnterData.enterData("Enter correct number of thread:");
 
         Thread[] threads = new Thread[numberThread];
-
         for (int i = 0; i < numberThread; i++) {
-            threads[i] = new Thread(new DiagonalNumberRecordingImpl(matrix, i + 1));
+            threads[i] = new Thread(new DiagonalNumberRecordingImpl2(matrix, i + 1));
             threads[i].start();
         }
         while (matrix.getArray()[size-1][size-1] == 0) {
@@ -31,6 +27,5 @@ public class Main {
                 matrix.notifyAll();
             }
         }
-
     }
 }

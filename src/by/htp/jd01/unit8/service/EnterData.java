@@ -1,4 +1,4 @@
-package by.htp.jd01.unit7.service;
+package by.htp.jd01.unit8.service;
 
 import java.util.Scanner;
 

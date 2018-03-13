@@ -1,4 +1,4 @@
-package by.htp.jd01.unit7.entity;
+package by.htp.jd01.unit8.entity;
 
 public class Matrix {
     private double[][] array;
