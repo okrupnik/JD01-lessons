@@ -22,6 +22,7 @@ public class CreateNoteImpl implements Command {
         int year = 0;
         int month = 0;
         int day = 0;
+        String response;
 
         String[] elements;
         for (int i = 1; i < params.length; i++) {
@@ -34,14 +35,26 @@ public class CreateNoteImpl implements Command {
                     newContent = elements[1];
                     break;
                 case "day":
-                    day = Integer.parseInt(elements[1]);
-                    break;
+                    try {
+                        day = Integer.parseInt(elements[1]);
+                        break;
+                    } catch (NumberFormatException e) {
+                        response = "Don't right data for date. Check out it.";
+                    }
                 case "month":
-                    month = Integer.parseInt(elements[1]);
-                    break;
+                    try {
+                        month = Integer.parseInt(elements[1]);
+                        break;
+                    } catch (NumberFormatException e) {
+                        response = "Don't right data for date. Check out it.";
+                    }
                 case "year":
-                    year = Integer.parseInt(elements[1]);
-                    break;
+                    try {
+                        year = Integer.parseInt(elements[1]);
+                        break;
+                    } catch (NumberFormatException e) {
+                        response = "Don't right data for date. Check out it.";
+                    }
             }
         }
 
@@ -51,7 +64,7 @@ public class CreateNoteImpl implements Command {
         NoteService noteService = factory.getNoteService();
 
         Note newNote = new Note(idUser, data, newContent);
-        String response;
+
         try {
             noteService.add(newNote);
             response = "The note is successfully added";

@@ -23,14 +23,19 @@ public class FindNoteImpl implements Command {
         int idUser = 0;
         String nickName = "";
         String password = "";
+        String response;
 
         String[] elements;
         for (int i = 1; i < params.length; i++) {
             elements = params[i].split("\\s*=\\s*");
             switch (elements[0]) {
                 case "idUser":
-                    idUser = Integer.parseInt(elements[1]);
-                    break;
+                    try {
+                        idUser = Integer.parseInt(elements[1]);
+                        break;
+                    } catch (NumberFormatException e) {
+                        response = "Don't right idUser. Check out it.";
+                    }
                 case "text":
                     text = elements[1];
                     break;
@@ -45,7 +50,6 @@ public class FindNoteImpl implements Command {
 
         ServiceFactory serviceFactory = ServiceFactory.getInstance();
         NoteService noteService = serviceFactory.getNoteService();
-        String response;
 
         try {
             List<Note> list = noteService.findWithContent(new User(idUser, nickName, password), text);
